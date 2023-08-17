@@ -131,8 +131,9 @@ public class MyOrderAdapter extends RecyclerView.Adapter<MyOrderAdapter.ViewHold
         private void setData(String resource, String title, String orderStatus,Date date,final int rating, final String productId, final int position) {
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("EEE, dd MMM yyyy hh:mm aa");
 
-            productTitle.setText(title);
+
             Glide.with(itemView.getContext()).load(resource).into(productImage);
+            productTitle.setText(title);
             if(orderStatus.equals("Cancelled")){
                 orderIndicator.setImageTintList(ColorStateList.valueOf(itemView.getContext().getResources().getColor(R.color.colorPrimary)));
             }else {

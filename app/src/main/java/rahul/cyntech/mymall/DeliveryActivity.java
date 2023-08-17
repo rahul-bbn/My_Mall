@@ -538,7 +538,7 @@ public class DeliveryActivity extends AppCompatActivity {
                 orderDetails.put("Delivery Price",cartItemModel.getDeliveryPrice());
                 orderDetails.put("Total Amount",cartItemModel.getTotalAmount());
                 orderDetails.put("Saved Amount",cartItemModel.getSavedAmount());
-                orderDetails.put("Payment status","not p aid");
+                orderDetails.put("Payment status","not paid");
                 orderDetails.put("Order Status","Cancelled");
 
                 firebaseFirestore.collection("ORDERS").document(order_id)

@@ -623,6 +623,7 @@ public class DBqueries {
 
                                                         );
                                                         myOrderItemModelList.add(myOrderItemModel);
+
                                                     }
                                                     loadRatingList(context);
                                                     if (myOrderAdapter != null) {
